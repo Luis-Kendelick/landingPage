@@ -7,15 +7,10 @@ export default createGlobalStyle`
     padding: 0;
     outline: 0;
     box-sizing: border-box;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
   }
 
   body{
-    background: white url(${bg}) no-repeat 50% top;
-    background-size: 100%;
-
+    background: transparent url(${bg}) no-repeat fixed top;
     -webkit-font-smoothing: antialised;
   }
 

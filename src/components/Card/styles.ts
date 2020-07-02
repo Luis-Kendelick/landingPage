@@ -1,63 +1,51 @@
 import styled from 'styled-components';
 
-export const CardsStyle = styled.a`
-  position: relative;
+export const Cards = styled.div`
   display: flex;
+  justify-content: center;
 
-  width: 100%;
-  height: 100%;
-  background: white;
-  flex-direction: column;
-  border-radius: 25px;
-  box-shadow: 2px 2px 10px grey;
-  cursor: pointer;
-  transition: 400ms;
+  margin: 5vmax 0;
 
-  &:active {
-    opacity: 0.6;
-  }
-
-  .plus {
+  .card-content {
+    width: 80vw;
+    height: 30vmax;
+    background-color: transparent;
     display: flex;
-    width: 100%;
-    height: 90%;
-    justify-content: flex-end;
-  }
+    justify-content: space-around;
 
-  img:nth-child(1) {
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-  }
-  img:nth-child(2) {
-    width: 10%;
-    height: 10%;
-    opacity: 0.4;
-    position: absolute;
-    bottom: 10%;
-    border-radius: 25px 0 25px 0;
-    transition: 400ms;
-
-    &:hover {
-      opacity: 0.8;
+    @media only screen and (max-width: 1000px) {
+      justify-content: flex-start;
+      display: flex;
+      flex-direction: column;
+      height: 130vw;
+      width: 80vw;
     }
   }
 
-  .legend {
-    display: flex;
-    width: 100%;
-    height: 13%;
+  .major-card {
+    height: 95%;
+    width: 30%;
+    background-color: blue;
+
+    @media only screen and (max-width: 1000px) {
+      height: 90vw;
+      width: 80vw;
+    }
   }
-  p {
-    font-size: 2vh;
-    line-height: 100%;
-    margin-right: 60%;
-    color: grey;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    border-radius: 0 0 25px 25px;
+
+  .minor-cards {
+    height: 95%;
+    width: 65%;
+
+    background-color: yellow;
+
+    @media only screen and (max-width: 1000px) {
+      height: 30vw;
+      width: 80vw;
+    }
+    @media only screen and (max-width: 700px) {
+      height: 50vw;
+      width: 80vw;
+    }
   }
 `;

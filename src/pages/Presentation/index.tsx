@@ -1,18 +1,22 @@
 import React from 'react';
-import { Title } from './styles';
+import { RespHeader, Header } from './styles';
 import Card from '../../components/Card';
-import Minorcard from '../../components/Minorcard';
+// import Minorcard from '../../components/Minorcard';
+import bg from '../../assets/argo.svg';
+import fiat from '../../assets/fiat.svg';
 
 const Presentation: React.FC = () => {
   return (
-    <Title>
-      <div className="show">
-        <Card />
-      </div>
-      <div className="choose">
-        <Minorcard />
-      </div>
-    </Title>
+    <>
+      <RespHeader>
+        <button type="button" />
+        <img src={fiat} alt="Logo Fiat" />
+      </RespHeader>
+      <Header>
+        <img src={bg} alt="Logo Modelo Argo" />
+      </Header>
+      <Card />
+    </>
   );
 };
 

@@ -1,25 +1,64 @@
 import styled from 'styled-components';
+import dragger from '../../assets/dragger.png';
 
-export const Title = styled.div`
-  position: relative;
-  margin: 25vh auto;
+export const RespHeader = styled.header`
+  position: absolute;
   display: flex;
-  justify-content: space-between;
-  align-content: center;
 
-  width: 70vmax;
-  height: 25vmax;
-  background-color: rgba(0, 0, 0, 0);
-  box-sizing: border-box;
-  .show {
-    width: 40%;
-    height: 95%;
-    margin: auto 0;
+  height: 60px;
+  width: 100vw;
+
+  border-bottom: 1px solid white;
+  top: -100px;
+
+  transition: 700ms;
+
+  @media only screen and (max-width: 1000px) {
+    position: relative;
+    top: 0;
   }
-  .choose {
+
+  button {
+    position: absolute;
     display: flex;
-    width: 58%;
-    height: 95%;
-    margin: auto 0;
+    width: 30px;
+    height: 30px;
+
+    left: 0%;
+    margin: 15px 0 auto 30px;
+    border: 0;
+
+    background: url(${dragger});
+    background-size: 100%;
+    background-color: transparent;
+    border-radius: 3px;
+
+    transition: 400ms;
+
+    &:hover {
+      background-color: rgba(50, 50, 50, 0.2);
+    }
+  }
+
+  img {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    margin: 15px auto 0 auto;
+  }
+`;
+export const Header = styled.a`
+  height: 4vmax;
+  display: flex;
+  justify-content: center;
+  margin-top: 2vmax;
+
+  img {
+    height: 80%;
+    max-width: 368px;
+    max-height: 368px;
+    @media screen and (max-width: 1000px) {
+      max-width: 200px;
+    }
   }
 `;
