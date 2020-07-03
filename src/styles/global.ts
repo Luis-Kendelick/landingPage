@@ -10,7 +10,7 @@ export default createGlobalStyle`
   }
 
   body{
-    background: transparent url(${bg}) no-repeat fixed top;
+    background: transparent url(${bg}) no-repeat scroll top;
     -webkit-font-smoothing: antialised;
   }
 

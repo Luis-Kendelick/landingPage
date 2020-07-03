@@ -1,15 +1,16 @@
 <svg width="1024" height="1024" xmlns="http://www.w3.org/2000/svg">
  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
  <g>
   <title>background</title>
-  <rect fill="#ffffff" id="canvas_background" height="1026" width="1026" y="-1" x="-1"/>
+  <rect fill="none" id="canvas_background" height="1026" width="1026" y="-1" x="-1"/>
   <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
    <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
   </g>
  </g>
  <g>
   <title>Layer 1</title>
-  <path stroke="#ffffff" transform="rotate(-45 511.97308349609347,511.9731140136718) " id="svg_2" d="m830.145201,720.658859l-210.128801,-208.666793l210.090608,-208.666799l-108.005135,-107.329525l-210.128801,208.666799l-210.128801,-208.666799l-108.005135,107.329525l210.090608,208.666799l-210.128801,208.666793l108.081521,107.291596l210.090608,-208.666793l210.090608,208.666793" stroke-opacity="null" stroke-width="0" fill="#4f6b50"/>
-  <path id="svg_3" d="m-927.758975,184.730441l-0.02751,-0.02751l0.027505,-0.02751l-0.01414,-0.01415l-0.02751,0.02751l-0.02751,-0.02751l-0.01414,0.01415l0.027505,0.02751l-0.02751,0.02751l0.01415,0.014145l0.027505,-0.02751l0.027505,0.02751" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <path stroke="#000" id="svg_2" d="m313.999928,451.33332l396.000173,0l0,121.333359l-396.000173,0l0,-121.333359z" stroke-opacity="null" stroke-width="0" fill="#158484"/>
+  <path transform="rotate(90 511.99999999999994,512.0000000000001) " stroke="#000" id="svg_5" d="m313.999914,451.33333l396.00018,0l0,121.33336l-396.00018,0l0,-121.33336z" stroke-opacity="null" stroke-width="0" fill="#327a7a"/>
  </g>
 </svg>
